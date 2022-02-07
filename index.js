@@ -14,6 +14,7 @@ app.get("/about", (req, res) => {
 app.get("/prime/:num", (req, res) => {
   //res.sendFile(path.join(__dirname + "/base.html"));
   //   var abc = req.params.num;
+  console.log(req.params.num);
   res.send(isPrime(req.params.num));
 });
 app.listen(port, () => {
